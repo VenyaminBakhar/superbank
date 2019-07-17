@@ -1,7 +1,7 @@
 <b>HOW TO RUN</b>
 
-mvn package
-java -jar "target/superbank-1.0-SNAPSHOT.jar"
+1) mvn package
+2) java -jar "target/superbank-1.0-SNAPSHOT.jar"
 
 
 
