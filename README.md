@@ -1,11 +1,11 @@
-HOW TO RUN
+<b>HOW TO RUN</b>
 
 mvn package
 java -jar "target/superbank-1.0-SNAPSHOT.jar"
 
 
 
-ACCOUNT API
+<b>ACCOUNT API<b>
 
 1) Get account by id        GET http://localhost:3535/accounts/id
 
@@ -17,7 +17,7 @@ ACCOUNT API
 
 
    
-TRANSACTION API
+<b>TRANSACTION API<b>
 
 1) Transfer money           POST http://localhost:3535/transactions
    Body example:  { "idFrom" : "1", "idTo" : "2", "amount" : "1000" }
@@ -27,7 +27,7 @@ TRANSACTION API
 
 
 
-HTTP RESPONSES
+<b>HTTP RESPONSES<b>
 
 Get account api:
 200 OK         "Account{id=2, holderName='Veniamin Bakhar', balance=1000000.0}"
@@ -54,6 +54,6 @@ Get transaction history api:
 500 Internal Server Error   "Exception message"
 
 
-NOTES
+<b>NOTES<b>
 
 "Get account" api performance was increased by caching.
