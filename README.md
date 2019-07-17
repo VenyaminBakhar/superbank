@@ -15,7 +15,7 @@ java -jar "target/superbank-1.0-SNAPSHOT.jar"
 
 
 
-    TRANSACTION API
+   TRANSACTION API
 1) Transfer money           POST http://localhost:3535/transactions
    Body example:  { "idFrom" : "1", "idTo" : "2", "amount" : "1000" }
 
