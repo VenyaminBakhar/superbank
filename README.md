@@ -1,11 +1,11 @@
-                    HOW TO RUN
+    HOW TO RUN
 
 mvn package
 java -jar "target/superbank-1.0-SNAPSHOT.jar"
 
 
 
-                    ACCOUNT API
+    ACCOUNT API
 1) Get account by id        GET http://localhost:3535/accounts/id
 
 2) Delete account by id     DELETE http://localhost:3535/accounts/delete/id
@@ -15,7 +15,7 @@ java -jar "target/superbank-1.0-SNAPSHOT.jar"
 
 
 
-                    TRANSACTION API
+    TRANSACTION API
 1) Transfer money           POST http://localhost:3535/transactions
    Body example:  { "idFrom" : "1", "idTo" : "2", "amount" : "1000" }
 
@@ -24,7 +24,7 @@ java -jar "target/superbank-1.0-SNAPSHOT.jar"
 
 
 
-                    HTTP RESPONSES
+    HTTP RESPONSES
 Get account api:
 200 OK         "Account{id=2, holderName='Veniamin Bakhar', balance=1000000.0}"
 404 Not found  "Account not found"
@@ -50,5 +50,5 @@ Get transaction history api:
 500 Internal Server Error   "Exception message"
 
 
-                     NOTES
+    NOTES
 "Get account" api performance was increased by caching.
