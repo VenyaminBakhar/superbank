@@ -12,7 +12,7 @@ import static spark.Spark.*;
 
 public class AccountController {
     private static final AccountCacheService accountCacheService = AccountCacheService.getAccountCacheService();
-    private static final AccountServiceHandleExceptionWrapper accountServiceWrapper =
+    private final AccountServiceHandleExceptionWrapper accountServiceWrapper =
             AccountServiceHandleExceptionWrapper.getAccountServiceHandleExceptionWrapperInstance();
 
     public AccountController() {

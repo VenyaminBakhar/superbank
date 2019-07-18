@@ -10,7 +10,7 @@ import java.util.List;
 import static com.constants.MessageConstants.*;
 
 public class TransactionServiceHandleExceptionWrapper {
-    private static final TransactionService transactionService = TransactionService.getTransactionServiceInstance();
+    private final TransactionService transactionService = TransactionService.getTransactionServiceInstance();
 
     private static volatile TransactionServiceHandleExceptionWrapper transactionServiceHandleExceptionWrapperInstance;
 

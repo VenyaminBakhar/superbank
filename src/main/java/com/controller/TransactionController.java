@@ -12,7 +12,7 @@ import static spark.Spark.post;
 
 public class TransactionController {
 
-    private static final TransactionServiceHandleExceptionWrapper transactionServiceWrapper =
+    private final TransactionServiceHandleExceptionWrapper transactionServiceWrapper =
             TransactionServiceHandleExceptionWrapper.getTransactionServiceHandleExceptionInstance();
 
     public TransactionController() {

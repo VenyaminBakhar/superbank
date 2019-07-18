@@ -9,7 +9,7 @@ import com.service.AccountService;
 import static com.constants.MessageConstants.ACC_NOT_FOUND;
 
 public class AccountServiceHandleExceptionWrapper {
-    private static final AccountService accountService = AccountService.getAccountServiceInstance();
+    private final AccountService accountService = AccountService.getAccountServiceInstance();
 
     private static volatile AccountServiceHandleExceptionWrapper accountServiceHandleExceptionWrapperInstance;
 
